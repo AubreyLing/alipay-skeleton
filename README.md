@@ -6,7 +6,7 @@ A skeleton plugin for alipay mini-program
 
 1、在目标页面，如index页面的index.axml文件顶部引入skeleton.axml
 <!--引入骨架屏模版 -->
-<skeleton a:if="{{showSkeleton}}"></skeleton>
+//<skeleton a:if="{{showSkeleton}}"></skeleton>//
 
 2、给index.axml的最外层元素添加class名：skeleton
 <view class="container skeleton"></view>
