@@ -1,0 +1,17 @@
+<view a:if="{{visible}}" class="skeletons-container {{visible ? 'opacity' : ''}}" style="position: absolute;width:100%;height:{{systemInfo.height}}px;left:{{systemInfo.left}}px;top:{{systemInfo.top}};background:{{background}}">
+  <!-- 直角矩形 -->
+  <block a:if="{{rectList}}">
+    <view a:for="{{rectList}}" a:key="{{index}}" class="skeleton-rect skeletons-graph {{skt_animation}}" style="z-index: 999;position: absolute;background-color: rgb(243, 243, 243);width:{{item.width}}px;height:{{item.height}}px;left:{{item.left}}px;top:{{item.top}}px;"></view>
+  </block>
+  <!-- 圆形 -->
+  <block a:if="{{circleList}}">
+    <view a:for="{{circleList}}" a:key="{{index}}" class="skeleton-circle skeletons-graph {{skt_animation}}" style="z-index: 999;position: absolute;background-color: rgb(243, 243, 243);width:{{item.width}}px;height:{{item.height}}px;left:{{item.left}}px;top:{{item.top}}px;border-radius:{{item.width}}px;"></view>
+  </block>
+  <!-- 圆角矩形 -->
+  <block a:if="{{radiusList}}">
+    <view a:for="{{radiusList}}" a:key="{{index}}" class="skeleton-radius skeletons-graph {{skt_animation}}" style="z-index: 999;position: absolute;background-color: rgb(243, 243, 243);width:{{item.width}}px;height:{{item.height}}px;left:{{item.left}}px;top:{{item.top}}px;border-radius: 10rpx;"></view>
+  </block>
+  <block a:if="{{isLoading}}">
+    <image src="https://qiniu-image.qtshe.com/20190925loading.gif" class="loading-img" />
+  </block>
+</view>
