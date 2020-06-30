@@ -12,7 +12,7 @@ A skeleton plugin for alipay mini-program
 \<view class="container skeleton"\>\</view\>
 
 3、具体到各个元素，添加相应的class名
-（1）直角矩形：skeleton-rect\n
+（1）直角矩形：skeleton-rect/n
 （2）圆角矩形：skeleton-radius\n
 （3）圆形：skeleton-circle\n
 
