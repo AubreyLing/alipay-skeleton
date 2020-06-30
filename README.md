@@ -9,11 +9,11 @@ A skeleton plugin for alipay mini-program
 \<skeleton a:if="{{showSkeleton}}"\>\</skeleton\>
 
 2、给index.axml的最外层元素添加class名：skeleton
-<view class="container skeleton"></view>
+\<view class="container skeleton"\>\</view\>
 
 3、具体到各个元素，添加相应的class名
-（1）直角矩形：skeleton-rect
-（2）圆角矩形：skeleton-radius
-（3）圆形：skeleton-circle
+（1）直角矩形：skeleton-rect\n
+（2）圆角矩形：skeleton-radius\n
+（3）圆形：skeleton-circle\n
 
 之前下载别人写的支付宝骨架屏插件，完全不可用，差不多有10个BUG，后面自己参考jayZhou的微信小程序骨架屏组件重写的，已经在我们公司的支付宝小程序上使用了
